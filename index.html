@@ -1,54 +1,76 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculadora</title>
-        <link rel="stylesheet" type="text/css" href="Css.css">
-    </head>
-    <body>
-        <div id="calculator" class="container color-highlight">
-            <div class="visor-row">
-                <input type="text" type="text" id="visor-input" maxlength="40">
-            </div>
-        <div class="row">
-            <div id="numeros" class="col-3">
-                <div class="row">
-                    <button value="7" class="numbers">7</button>
-                    <button value="8" class="numbers">8</button>
-                    <button value="9" class="numbers">9</button>
-                    <button value="delete" class="button btn-small operation">DEL</button>
-                </div>
-                <div class="row">
-                    <button value="4" class="numbers">4</button>
-                    <button value="5" class="numbers">5</button>
-                    <button value="6" class="numbers">6</button>
-                    <button value="/" class="button btn-small operation">/</button>
-                </div> 
-                <div class="row">
-                    <button value="1" class="numbers">1</button>
-                    <button value="2" class="numbers">2</button>
-                    <button value="3" class="numbers">3</button>
-                    <button value="*" class="button btn-small operation">*</button>
-                </div>
+<html lang="en" data-theme="light">
 
-            </div>
-        </div>
-        <div id="functions" class="col-1">
-                
-                <button value="-" class="button btn-small operation">-</button>  
-                
-                <button value="+" class="button btn-small operation">+</button>   
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+  <title>Calculadora v2.0</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-                <button value="=" class="button btn-small result" style="width: 117px;">=</button>
-            
-                                     
-                  
-            </div>
-        </div>
+<body>
+  <div class="main">
+    <div class="heading">
+      <span><i class="fas fa-bars"></i></span>
+      <span>Calculadora</span>
+      <span>
+        <label>
+          <input type="checkbox" name="theme">
+          <span class="btn"></span>
+          <i class="fas fa-moon"></i>
+        </label>
+      </span>
     </div>
+    <div id="result">
+      <div class="history">
+        <p id="history-value"></p>
+      </div>
+      <div class="output">
+        <p id="output-value"></p>
+      </div>
+    </div>
+    <div id="keyboard">
+      <div class="group">
+        <div class="top-section">
+          <button class="operator" id="clear">C</button>
+          <button class="operator" id="backspace">
+            <i class="fas fa-backspace"></i>
+          </button>
+          <button class="operator" id="%">%</button>
+        </div>
+        <div class="middle-section">
+          <div>
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+          </div>
+          <div>
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+          </div>
+          <div>
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+          </div>
+          <div>
+            <button class="number" id="00">00</button></td>
+            <button class="number" id="0">0</button></td>
+            <button class="number" id=".">.</button></td>
+          </div>
+        </div>
+      </div>
+      <div class="side-section">
+        <button class="operator" id="/">/</button>
+        <button class="operator" id="*">&times</button>
+        <button class="operator" id="-">-</button>
+        <button class="operator" id="+">+</button>
+        <button class="operator equal" id="=">=</button></td>
+      </div>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
 
-        
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="Back.js"></script>
 </html>
