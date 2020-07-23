@@ -1,0 +1,45 @@
+body {
+	font-size: large;
+	min-height:100%;
+	margin: 10%;
+	padding: 0;
+	background-color: #828282;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center; }
+	
+button {
+	padding: 20px 26px;
+	position: relative;
+	top: 50%;
+	bottom: 50%;
+	right: 50%;
+	left: 40%;	
+	margin: 2px;
+	background-color: #cecece;	
+	border-radius: 5px;
+	border-style: hidden;
+	}	
+.button.btn-small {
+	height: 56px;
+	width: 70px;
+	background-color: #bb4021;
+	 }
+.button.btn-small:hover {
+	background-color: #bb3000;
+}
+#visor-input {
+	padding: 15px 27px;
+	position: relative;
+	top: 50%;
+	bottom: 50%;
+	right: 50%;
+	left: 40%;	
+	margin: 2px;
+	background-color: #cecece;
+	border-radius: 5px;
+	border-style: hidden;	
+	font-size: large;
+	font-family: Arial;
+	}

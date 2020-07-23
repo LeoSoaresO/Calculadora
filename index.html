@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" type="text/css" href="Css.css">
+    </head>
+    <body>
+        <div id="calculator" class="container color-highlight">
+            <div class="visor-row">
+                <input type="text" type="text" id="visor-input" maxlength="40">
+            </div>
+        <div class="row">
+            <div id="numeros" class="col-3">
+                <div class="row">
+                    <button value="7" class="numbers">7</button>
+                    <button value="8" class="numbers">8</button>
+                    <button value="9" class="numbers">9</button>
+                    <button value="delete" class="button btn-small operation">DEL</button>
+                </div>
+                <div class="row">
+                    <button value="4" class="numbers">4</button>
+                    <button value="5" class="numbers">5</button>
+                    <button value="6" class="numbers">6</button>
+                    <button value="/" class="button btn-small operation">/</button>
+                </div> 
+                <div class="row">
+                    <button value="1" class="numbers">1</button>
+                    <button value="2" class="numbers">2</button>
+                    <button value="3" class="numbers">3</button>
+                    <button value="*" class="button btn-small operation">*</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="functions" class="col-1">
+                
+                <button value="-" class="button btn-small operation">-</button>  
+                
+                <button value="+" class="button btn-small operation">+</button>   
+
+                <button value="=" class="button btn-small result" style="width: 117px;">=</button>
+            
+                                     
+                  
+            </div>
+        </div>
+    </div>
+
+        
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="Back.js"></script>
+</html>
